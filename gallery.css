@@ -142,7 +142,24 @@
     cursor:pointer;
     right:0;
 }
-
+.img-btn-prev{
+    display:block;
+    font-size:2rem;
+    padding:8px 30px;
+    border-radius:4px;
+    background-color:#111;
+    position:fixed;
+    top:48vh;
+    z-index:500;
+    color:white;
+    cursor:pointer;
+}
+.img-btn-next:hover,
+.img-btn-prev:hover{
+    background-color: #282828;
+    transition: 0.2s ease-out;
+    
+}
 
 
 /***********MEDIA QUERY***************/
