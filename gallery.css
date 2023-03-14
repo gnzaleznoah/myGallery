@@ -127,8 +127,20 @@
 .popup-img{
     max-height: 80vh;
     max-width: 80vw;
-    z-index: 105;
-    
+    z-index: 105;    
+}
+.img-btn-next{
+    display:block;
+    font-size:2rem;
+    padding:8px 30px;
+    border-radius:4px;
+    background-color:#111;
+    position:fixed;
+    top:48vh;
+    z-index:500;
+    color:white;
+    cursor:pointer;
+    right:0;
 }
 
 
