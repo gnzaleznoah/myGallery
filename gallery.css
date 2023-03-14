@@ -110,6 +110,24 @@
         margin-right:250px;
     }
 }
+/****** JAVA SRIPT CLASSES**/
+.img-window{
+    width:100vw;
+    height:100vh;
+    background:rgba(0,0,0,.8);
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:100;
+    cursor:pointer;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+
+
+/***********MEDIA QUERY***************/
 @media screen and (min-width:825px) and (max-width:1100px){
     .gallery-cell:nth-child(4){
         top:-70px;

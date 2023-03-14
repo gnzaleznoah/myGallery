@@ -9,5 +9,9 @@ galleryImages.forEach(function(image, index){
         let container = document.body;
         let newImgWindow = document.createElement('div');
         container.appendChild(newImgWindow);
+        newImgWindow.setAttribute('class', 'img-window');
+        newImgWindow.setAttribute('onclick', 'closeImg()');
+
+        
     }
 })
