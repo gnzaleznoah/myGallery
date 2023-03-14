@@ -124,6 +124,12 @@
     justify-content:center;
     align-items:center;
 }
+.popup-img{
+    max-height: 80vh;
+    max-width: 80vw;
+    z-index: 105;
+    
+}
 
 
 

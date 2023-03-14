@@ -12,6 +12,27 @@ galleryImages.forEach(function(image, index){
         newImgWindow.setAttribute('class', 'img-window');
         newImgWindow.setAttribute('onclick', 'closeImg()');
 
-        
+        let newImg = image.firstElementChild.cloneNode();
+        newImgWindow.appendChild(newImg);
+        newImg.classList.remove(gallery.cell_img);
+        newImg.classList.add('popup-img');
+        newImg.setAttribute('id', 'current-img');
+
+        newImg.onload = function(){
+            let newNextBtn = document.createElement('a');
+            newNextBtn.innetHTML = '<i class="fas fa-chevron-right next"></i>';
+            container.appendChild(newNextBtn);
+            newNextBtn.setAttribute('class', 'img-btn-next');
+            newNextBtn.setAttribute('onclick', 'changeImg(1)');
+
+            let newPrevBtn = document.createElement('a');
+            newPrevBtn.innetHTML = '<i class="fas fa-chevron-right next"></i>';
+            container.appendChild(newNextPrev);
+            newNextPrev.setAttribute('class', 'img-btn-next');
+            newNextPrev.setAttribute('onclick', 'changeImg(0)');
+
+
+
+        }
     }
 })
