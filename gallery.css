@@ -136,4 +136,8 @@
         top:-70px;
     }
 }
-@
+@media screen and (max-width:550px){
+    .gallery-cell{
+        margin:25px 25px;
+    }
+}
