@@ -40,3 +40,31 @@ function closeImg(){
     document.querySelector('.img-btn-prev').remove();
 }
 
+function changeImg(change){
+    document.querySelector('#current-img').remove();
+
+    let getImgWindow = document.querySelector('img-window');
+    let newImg = document.createElement('img');
+    getImgWindow.appendChild(newImg);
+
+    let calcNewImg;
+    if (change == 1){
+        calcNewImg - getLatestOpenedImg +1;
+        if(calcNewImg > galleryImages.length){
+            calcNewImg = 1;
+        }
+    }
+    else if (change === 0){
+        calcNewImg = getLatestImg - 1;
+        if(calcNewImg < 1){
+            calcNewImg = galleryImages.length; 
+        }
+    }
+    
+    newImg.setAttribute('src', 'images/img-' + calcNewImg + 'jpg');
+    newImg.setAttribute('class','popup-img');
+    newImg.setAttribute('id','current-img');
+
+    getLatesOpenedImg = calcNewImg;
+}
+
