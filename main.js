@@ -48,8 +48,8 @@ function changeImg(change){
     getImgWindow.appendChild(newImg);
 
     let calcNewImg;
-    if (change == 1){
-        calcNewImg - getLatestOpenedImg +1;
+    if (change === 1){
+        calcNewImg = getLatestOpenedImg +1;
         if(calcNewImg > galleryImages.length){
             calcNewImg = 1;
         }
@@ -61,7 +61,7 @@ function changeImg(change){
         }
     }
     
-    newImg.setAttribute('src', 'images/img-' + calcNewImg + 'jpg');
+    newImg.setAttribute('src', 'images/img-' + calcNewImg + '.jpg');
     newImg.setAttribute('class','popup-img');
     newImg.setAttribute('id','current-img');
 
