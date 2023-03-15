@@ -1,5 +1,5 @@
 let galleryImages = document.querySelectorAll('.gallery-cell');
-let getLatesOpenedImg;
+let getLatestOpenedImg;
 let windowWidth = window.innerWidth;
 
 galleryImages.forEach(function(image, index){
@@ -43,7 +43,7 @@ function closeImg(){
 function changeImg(change){
     document.querySelector('#current-img').remove();
 
-    let getImgWindow = document.querySelector('img-window');
+    let getImgWindow = document.querySelector('.img-window');
     let newImg = document.createElement('img');
     getImgWindow.appendChild(newImg);
 
@@ -65,6 +65,6 @@ function changeImg(change){
     newImg.setAttribute('class','popup-img');
     newImg.setAttribute('id','current-img');
 
-    getLatesOpenedImg = calcNewImg;
+    getLatestOpenedImg = calcNewImg;
 }
 
