@@ -198,4 +198,11 @@
         top:-280px;
         margin-left:-245px;
     }
+    .gallery-cell:nth-child(9){
+        top:-350px;
+    }
+    .gallery-cell:nth-child(10){
+        top:-415px;
+        margin-right:-245px;
+    }
 }
