@@ -55,7 +55,7 @@ function changeImg(change){
         }
     }
     else if (change === 0){
-        calcNewImg = getLatestImg - 1;
+        calcNewImg = getLatestOpenedImg - 1;
         if(calcNewImg < 1){
             calcNewImg = galleryImages.length; 
         }
