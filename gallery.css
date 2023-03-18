@@ -166,6 +166,23 @@
     .gallery-cell:nth-child(n+5){
         position:relative;
         top:-70px;
+        left:125px;
+    }
+    .gallery-cell:nth-child(8){
+        top:140px;
+        left:-760px;
+    }
+    .gallery-cell:nth-child(9){
+        top:-140px;
+        left:0;
+    }
+    .gallery-cell:nth-child(9){
+        top: -140px;
+        left:0;
+    }
+    .gallery-cell:nth-child(10){
+        top:-140px;
+        left:0;
     }
 }
 @media screen and (max-width:550px){
